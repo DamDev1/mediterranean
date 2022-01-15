@@ -30,10 +30,13 @@ section{
                 background-size: cover;
 
                 header{
-                    padding: 1em 5em;
-                    background: red;
+                    padding: 1em 2em;
+                    background: transparent;
                     position: fixed;
+                    display: flex;
+                    justify-content: space-between;
                     margin-top: 0;
+                    width: 100%;
                     .brand{
                         display: flex;
                         .logo{
@@ -47,7 +50,7 @@ section{
 
                         h1{
                             margin-top: 20px;
-                            margin-left: 10px;
+                            margin-left: 20px;
                             color: white;
                             font-family: var(--fontfamily1);
                             font-weight: bolder;
@@ -64,29 +67,28 @@ section{
                                 color: white;
                                 cursor: pointer;
                                 margin-top: 20px;
+                                font-family: var(--fontfamily2);
+                                font-size: 15px;
                             }
                         }
                     }
                 }
 
                 .listItem{
-                    padding: 0em 5em;
-                    
-
+                    padding-top: 15%;
                     #item{
                         font-size: 40px;
+                        margin-top: 50px;
+                        margin-left: 20px;
                         color: white;
-                        margin-top: 60px;
-                        position: relative;
                     }
 
-                    #item::after{
+                    .line{
                         width: 4em;
                         height: 2px;
-                        content: "";
-                        position: absolute;
                         background: white;
                         margin-top: 10px;
+                        position: absolute;
                     }
                 }
             }
@@ -106,6 +108,9 @@ section{
                     background-size: cover;
                     color: white;
                     text-align: center;
+                    padding-top: 15%;
+                    font-family: var(--fontfamily2);
+                    font-size: 20px;
                 }
 
                 .winter{
@@ -115,10 +120,107 @@ section{
                     background-size: cover;
                     color: white;
                     text-align: center;
+                    padding-top: 15%;
+                    font-family: var(--fontfamily2);
+                    font-size: 20px;
                 }
             }
 
             
+        }
+
+        .storyContainer{
+            margin-top: 3em;
+            padding: 2em;
+            
+            .container{
+
+                .storyText{
+
+                    h1{
+                        font-size: 40px;
+                    }
+
+                    p{
+                        margin-top: 50px;
+                        font-family: var(--fontfamily2);
+                        font-size: 18px;
+                        letter-spacing: 2px;
+                        line-height: 30px;
+                        font-weight: 500;
+                        color: rgba(109, 108, 108, 0.774);
+                    }
+                }
+
+                .ourStory{
+                    margin-top: 4em;
+
+                    .contentOne{
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                    
+
+                        .contentImg{
+                            width: 100%;
+                            height: 50vw;
+                            background: url("../image/image3.png");
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+
+                        .contentText{
+                            margin-left: 20px;
+                            margin-top: 3em;
+                            h1{
+                                font-size: 30px;
+                            }
+
+                            p{
+                                margin-top: 50px;
+                                font-family: var(--fontfamily2);
+                                font-size: 18px;
+                                line-height: 30px;
+                                font-weight: 500;
+                                color: rgba(109, 108, 108, 0.774);
+                            }
+                        }
+                    }
+
+                    .contentTwo{
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        margin-top: 30px;
+                    
+
+                        .contentImg{
+                            width: 100%;
+                            height: 50vw;
+                            background: url("../image/image4.png");
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                        }
+
+                        .contentText{
+                            margin-right: 20px;
+                            margin-top: 3em;
+                            h1{
+                                font-size: 30px;
+                            }
+
+                            p{
+                                margin-top: 50px;
+                                font-family: var(--fontfamily2);
+                                font-size: 18px;
+                                line-height: 30px;
+                                font-weight: 500;
+                                color: rgba(109, 108, 108, 0.774);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

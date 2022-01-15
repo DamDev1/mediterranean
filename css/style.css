@@ -27,10 +27,17 @@ section .container .mediShow .mediContainer {
 }
 
 section .container .mediShow .mediContainer header {
-  padding: 1em 5em;
-  background: red;
+  padding: 1em 2em;
+  background: transparent;
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 0;
+  width: 100%;
 }
 
 section .container .mediShow .mediContainer header .brand {
@@ -50,7 +57,7 @@ section .container .mediShow .mediContainer header .brand .logo {
 
 section .container .mediShow .mediContainer header .brand h1 {
   margin-top: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
   color: white;
   font-family: var(--fontfamily1);
   font-weight: bolder;
@@ -63,26 +70,27 @@ section .container .mediShow .mediContainer header .right a button {
   color: white;
   cursor: pointer;
   margin-top: 20px;
+  font-family: var(--fontfamily2);
+  font-size: 15px;
 }
 
 section .container .mediShow .mediContainer .listItem {
-  padding: 0em 5em;
+  padding-top: 15%;
 }
 
 section .container .mediShow .mediContainer .listItem #item {
   font-size: 40px;
+  margin-top: 50px;
+  margin-left: 20px;
   color: white;
-  margin-top: 60px;
-  position: relative;
 }
 
-section .container .mediShow .mediContainer .listItem #item::after {
+section .container .mediShow .mediContainer .listItem .line {
   width: 4em;
   height: 2px;
-  content: "";
-  position: absolute;
   background: white;
   margin-top: 10px;
+  position: absolute;
 }
 
 section .container .mediShow .showcase {
@@ -104,6 +112,9 @@ section .container .mediShow .showcase .summer {
   background-size: cover;
   color: white;
   text-align: center;
+  padding-top: 15%;
+  font-family: var(--fontfamily2);
+  font-size: 20px;
 }
 
 section .container .mediShow .showcase .winter {
@@ -114,5 +125,100 @@ section .container .mediShow .showcase .winter {
   background-size: cover;
   color: white;
   text-align: center;
+  padding-top: 15%;
+  font-family: var(--fontfamily2);
+  font-size: 20px;
+}
+
+section .container .storyContainer {
+  margin-top: 3em;
+  padding: 2em;
+}
+
+section .container .storyContainer .container .storyText h1 {
+  font-size: 40px;
+}
+
+section .container .storyContainer .container .storyText p {
+  margin-top: 50px;
+  font-family: var(--fontfamily2);
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-weight: 500;
+  color: rgba(109, 108, 108, 0.774);
+}
+
+section .container .storyContainer .container .ourStory {
+  margin-top: 4em;
+}
+
+section .container .storyContainer .container .ourStory .contentOne {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+section .container .storyContainer .container .ourStory .contentOne .contentImg {
+  width: 100%;
+  height: 50vw;
+  background: url("../image/image3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section .container .storyContainer .container .ourStory .contentOne .contentText {
+  margin-left: 20px;
+  margin-top: 3em;
+}
+
+section .container .storyContainer .container .ourStory .contentOne .contentText h1 {
+  font-size: 30px;
+}
+
+section .container .storyContainer .container .ourStory .contentOne .contentText p {
+  margin-top: 50px;
+  font-family: var(--fontfamily2);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: rgba(109, 108, 108, 0.774);
+}
+
+section .container .storyContainer .container .ourStory .contentTwo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin-top: 30px;
+}
+
+section .container .storyContainer .container .ourStory .contentTwo .contentImg {
+  width: 100%;
+  height: 50vw;
+  background: url("../image/image4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section .container .storyContainer .container .ourStory .contentTwo .contentText {
+  margin-right: 20px;
+  margin-top: 3em;
+}
+
+section .container .storyContainer .container .ourStory .contentTwo .contentText h1 {
+  font-size: 30px;
+}
+
+section .container .storyContainer .container .ourStory .contentTwo .contentText p {
+  margin-top: 50px;
+  font-family: var(--fontfamily2);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  color: rgba(109, 108, 108, 0.774);
 }
 /*# sourceMappingURL=style.css.map */
